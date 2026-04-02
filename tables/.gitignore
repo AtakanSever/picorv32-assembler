@@ -1,0 +1,2 @@
+Set-Content .gitignore "__pycache__/`n*.pyc`n__MACOSX/`n.DS_Store`n.pytest_cache/"
+
