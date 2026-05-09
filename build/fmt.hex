@@ -1,0 +1,9 @@
+// PicoRV32 linker output
+// Entry point: 0x00000000
+// Image:       0x00000000 .. 0x0000000f
+// Words:       4
+//
+05500513
+03300593
+00b50633
+00000013

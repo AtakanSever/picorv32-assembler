@@ -19,6 +19,7 @@ from tables.opcode_table import get_instruction_info, OPCODE_TABLE, REGISTER_TAB
 from tables.symbol_table import SymbolTable
 from tables.directive import process_directive, is_directive
 from tables.pseudo import is_pseudo, expand_pseudo
+from assembler.simulator import simulate, print_registers, print_memory
 
 
 def print_opcode_table():
@@ -155,11 +156,24 @@ def assemble(source_code):
     # --- ADIM 6: Hata Raporu ---
     error_handler.print_errors()
 
+    # --- ADIM 7: Simulasyon - Register Degerleri ---
+    if not error_handler.has_errors():
+        registers, final_memory, steps = simulate(
+            expanded_tokens, symbol_table, data_memory
+        )
+        print_registers(registers)
+        print_memory(final_memory)
+        print(f"  Simulasyon {steps} adimda tamamlandi.")
+    else:
+        registers = [0] * 32
+        final_memory = data_memory
+
     return {
         "object_code": object_code,
         "symbol_table": symbol_table.get_all_symbols(),
         "errors": error_handler.get_errors(),
-        "data_memory": data_memory
+        "data_memory": final_memory,
+        "registers": registers
     }
 
 

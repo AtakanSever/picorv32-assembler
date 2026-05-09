@@ -1,0 +1,57 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "roundtrip.s",
+  "timestamp": "2026-05-09T16:40:43",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 16,
+      "data": "1305a00297000000e780000067800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "someone",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 4
+    },
+    {
+      "name": "hello",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 6
+    }
+  ],
+  "relocations": [
+    {
+      "section": ".text",
+      "offset": 4,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "someone",
+      "addend": 0,
+      "line": 8
+    },
+    {
+      "section": ".text",
+      "offset": 8,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "someone",
+      "addend": 0,
+      "line": 8
+    }
+  ]
+}

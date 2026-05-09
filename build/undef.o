@@ -1,0 +1,57 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "undef.s",
+  "timestamp": "2026-05-09T16:40:43",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 8,
+      "data": "97000000e7800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "not_defined",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 4
+    },
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 6
+    }
+  ],
+  "relocations": [
+    {
+      "section": ".text",
+      "offset": 0,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "not_defined",
+      "addend": 0,
+      "line": 7
+    },
+    {
+      "section": ".text",
+      "offset": 4,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "not_defined",
+      "addend": 0,
+      "line": 7
+    }
+  ]
+}

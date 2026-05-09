@@ -1,0 +1,31 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "fmt.s",
+  "timestamp": "2026-05-09T16:40:43",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 16,
+      "data": "13055005930530033306b50013000000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 4
+    }
+  ],
+  "relocations": []
+}

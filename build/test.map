@@ -1,0 +1,17 @@
+# PicoRV32 Linker Map
+# Generated: 2026-05-09T15:58:48
+
+## Memory Regions
+  mem      0x00000000 .. 0x00001fff  (8192 bytes, rwx)
+
+## Section Layout
+  .text  (mem=mem)
+    0x00000000  size=20    B   test_main.o
+    0x00000014  size=32    B   test_square.o
+
+## Global Symbols
+  0x00000000  _start                   [.text]   test_main.o
+  0x00000014  square                   [.text]   test_square.o
+
+## Entry Point
+  0x00000000

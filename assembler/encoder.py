@@ -125,6 +125,16 @@ def encode_u_type(rd, imm, opcode):
     return instruction
 
 
+def encode_i_shift(rd, rs1, shamt, funct3, funct7, opcode):
+    """I-Shift komutu (SLLI/SRLI/SRAI) encode'u.
+
+    Bit yapisi I-type ile ayni; ama imm[11:0] = (funct7 << 5) | (shamt & 0x1F).
+    shamt 0..31 araliginda olmali.
+    """
+    imm = ((funct7 & 0x7F) << 5) | (shamt & 0x1F)
+    return encode_i_type(rd, rs1, imm & 0xFFF, funct3, opcode)
+
+
 def encode_j_type(rd, imm, opcode):
     """J-Type komut formatini encode eder.
 

@@ -1,0 +1,136 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "hex_test.s",
+  "timestamp": "2026-05-09T16:20:05",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 196,
+      "data": "37210000130101ff37c5adde1305f5ee97000000e78000001305a00097000000e7800000b7020010938282001305100023a0a2006f000000b70200109382420023a0a20067800000130101ff2326110023248100232291002320210113040500b704001093844400130980001309f9ff130304009303090063880300135343009383f3ff6ff05fff1373f300130ea0006348c301130363ff130313066f0080001303030323a06400e31209fc8320c1000324810083244100032901001301010167800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 4
+    },
+    {
+      "name": "hang",
+      "section": ".text",
+      "value": 52,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 13
+    },
+    {
+      "name": "put_char",
+      "section": ".text",
+      "value": 56,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 15
+    },
+    {
+      "name": "put_hex32",
+      "section": ".text",
+      "value": 72,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 20
+    },
+    {
+      "name": "hloop",
+      "section": ".text",
+      "value": 108,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 31
+    },
+    {
+      "name": "sloop",
+      "section": ".text",
+      "value": 120,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 35
+    },
+    {
+      "name": "sdone",
+      "section": ".text",
+      "value": 136,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 40
+    },
+    {
+      "name": "isdig",
+      "section": ".text",
+      "value": 160,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 47
+    },
+    {
+      "name": "emit",
+      "section": ".text",
+      "value": 164,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 49
+    }
+  ],
+  "relocations": [
+    {
+      "section": ".text",
+      "offset": 16,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "put_hex32",
+      "addend": 0,
+      "line": 7
+    },
+    {
+      "section": ".text",
+      "offset": 20,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "put_hex32",
+      "addend": 0,
+      "line": 7
+    },
+    {
+      "section": ".text",
+      "offset": 28,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "put_char",
+      "addend": 0,
+      "line": 9
+    },
+    {
+      "section": ".text",
+      "offset": 32,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "put_char",
+      "addend": 0,
+      "line": 9
+    }
+  ]
+}

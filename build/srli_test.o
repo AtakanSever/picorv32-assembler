@@ -1,0 +1,40 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "srli_test.s",
+  "timestamp": "2026-05-09T16:19:42",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 44,
+      "data": "37c5adde1305f5ee93554500b70200109382020023a0b200b7020010938282001305100023a0a2006f000000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 3
+    },
+    {
+      "name": "hang",
+      "section": ".text",
+      "value": 40,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 11
+    }
+  ],
+  "relocations": []
+}

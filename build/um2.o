@@ -1,0 +1,177 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "uart_main2.s",
+  "timestamp": "2026-05-09T16:21:32",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 76,
+      "data": "37210000130101ff370500001305050097000000e780000037050000130505000325050097000000e78000001305a00097000000e7800000b7020010938282001305100023a0a2006f000000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    },
+    {
+      "name": ".data",
+      "addr": 0,
+      "size": 7,
+      "data": "583d00efbeadde",
+      "align": 4,
+      "flags": [
+        "WRITE",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "uart_putc",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 3
+    },
+    {
+      "name": "uart_puts",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 4
+    },
+    {
+      "name": "uart_put_hex32",
+      "section": "*UND*",
+      "value": 0,
+      "size": 0,
+      "binding": "EXTERN",
+      "type": "NOTYPE",
+      "line": 5
+    },
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 7
+    },
+    {
+      "name": "hang",
+      "section": ".text",
+      "value": 72,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 19
+    },
+    {
+      "name": "greet",
+      "section": ".data",
+      "value": 0,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 22
+    },
+    {
+      "name": "magic",
+      "section": ".data",
+      "value": 3,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 23
+    }
+  ],
+  "relocations": [
+    {
+      "section": ".text",
+      "offset": 8,
+      "type": "R_RISCV_HI20",
+      "symbol": "greet",
+      "addend": 0,
+      "line": 9
+    },
+    {
+      "section": ".text",
+      "offset": 12,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "greet",
+      "addend": 0,
+      "line": 9
+    },
+    {
+      "section": ".text",
+      "offset": 16,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "uart_puts",
+      "addend": 0,
+      "line": 10
+    },
+    {
+      "section": ".text",
+      "offset": 20,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "uart_puts",
+      "addend": 0,
+      "line": 10
+    },
+    {
+      "section": ".text",
+      "offset": 24,
+      "type": "R_RISCV_HI20",
+      "symbol": "magic",
+      "addend": 0,
+      "line": 11
+    },
+    {
+      "section": ".text",
+      "offset": 28,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "magic",
+      "addend": 0,
+      "line": 11
+    },
+    {
+      "section": ".text",
+      "offset": 36,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "uart_put_hex32",
+      "addend": 0,
+      "line": 13
+    },
+    {
+      "section": ".text",
+      "offset": 40,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "uart_put_hex32",
+      "addend": 0,
+      "line": 13
+    },
+    {
+      "section": ".text",
+      "offset": 48,
+      "type": "R_RISCV_PCREL_HI20",
+      "symbol": "uart_putc",
+      "addend": 0,
+      "line": 15
+    },
+    {
+      "section": ".text",
+      "offset": 52,
+      "type": "R_RISCV_PCREL_LO12_I",
+      "symbol": "uart_putc",
+      "addend": 0,
+      "line": 15
+    }
+  ]
+}

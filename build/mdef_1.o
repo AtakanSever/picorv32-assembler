@@ -1,0 +1,31 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "f1.s",
+  "timestamp": "2026-05-09T16:40:43",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 4,
+      "data": "67800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "foo",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 3
+    }
+  ],
+  "relocations": []
+}

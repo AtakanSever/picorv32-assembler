@@ -1,0 +1,58 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "square.s",
+  "timestamp": "2026-05-09T15:54:34",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 32,
+      "data": "930200001303050063080300b382a2001303f3ffe31c03fe1385020067800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "square",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 5
+    },
+    {
+      "name": "mul_emu",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 6
+    },
+    {
+      "name": "sloop",
+      "section": ".text",
+      "value": 12,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 10
+    },
+    {
+      "name": "done",
+      "section": ".text",
+      "value": 24,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 14
+    }
+  ],
+  "relocations": []
+}

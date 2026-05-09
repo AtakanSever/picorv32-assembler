@@ -19,7 +19,7 @@
 .text
 
 # --- Baslangic degerleri ---
-        ADDI x10, x0, 0       # x10 = veri baslangic adresi (0x100)
+        ADDI x0, x10, x0       # x10 = veri baslangic adresi (0x100)
         ADDI x10, x10, 256    # x10 = 0x100 (256)
         ADDI x11, x0, 0x4B    # x11 = sifreleme anahtari (0x4B = 75)
         ADDI x12, x0, 0       # x12 = sayac (i = 0)
