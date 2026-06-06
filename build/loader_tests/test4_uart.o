@@ -1,0 +1,104 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "test4_uart.s",
+  "timestamp": "2026-06-06T04:07:58",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 72,
+      "data": "37210000130101ff3704001013044400b7040000938404000385040063080500ef000001938414006ff01fff6f0000002320a400b7220000938202f49382f2ffe39e02fe67800000",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    },
+    {
+      "name": ".data",
+      "addr": 0,
+      "size": 14,
+      "data": "4c4f414445522d4f4b2034320a00",
+      "align": 4,
+      "flags": [
+        "WRITE",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "msg",
+      "section": ".data",
+      "value": 0,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 13
+    },
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 18
+    },
+    {
+      "name": "print_loop",
+      "section": ".text",
+      "value": 24,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 23
+    },
+    {
+      "name": "done",
+      "section": ".text",
+      "value": 44,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 30
+    },
+    {
+      "name": "putc",
+      "section": ".text",
+      "value": 48,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 34
+    },
+    {
+      "name": "putc_wait",
+      "section": ".text",
+      "value": 60,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 37
+    }
+  ],
+  "relocations": [
+    {
+      "section": ".text",
+      "offset": 16,
+      "type": "R_RISCV_HI20",
+      "symbol": "msg",
+      "addend": 0,
+      "line": 21
+    },
+    {
+      "section": ".text",
+      "offset": 20,
+      "type": "R_RISCV_LO12_I",
+      "symbol": "msg",
+      "addend": 0,
+      "line": 21
+    }
+  ]
+}

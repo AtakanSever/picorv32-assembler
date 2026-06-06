@@ -1,0 +1,49 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "btn_uart.s",
+  "timestamp": "2026-06-06T04:59:22",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 60,
+      "data": "37210000130101ff3704001013044400b70400109384c40003a5040013751500130505032320a400b75202009382029f9382f2ffe39e02fe6ff01ffe",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 5
+    },
+    {
+      "name": "loop",
+      "section": ".text",
+      "value": 24,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 9
+    },
+    {
+      "name": "d",
+      "section": ".text",
+      "value": 48,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 15
+    }
+  ],
+  "relocations": []
+}

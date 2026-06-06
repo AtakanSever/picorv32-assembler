@@ -1,0 +1,49 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "test2_loop.s",
+  "timestamp": "2026-06-06T05:18:43",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 52,
+      "data": "37210000130101ff37040010130404009304000013f5f4032320a400b79504009385053e9385f5ffe39e05fe938414006ff05ffe",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 15
+    },
+    {
+      "name": "count_loop",
+      "section": ".text",
+      "value": 20,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 20
+    },
+    {
+      "name": "delay",
+      "section": ".text",
+      "value": 36,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 25
+    }
+  ],
+  "relocations": []
+}

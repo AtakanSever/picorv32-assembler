@@ -2,7 +2,7 @@
   "magic": "PICORV32-OBJ",
   "version": 1,
   "filename": "math_lib.s",
-  "timestamp": "2026-05-09T16:39:55",
+  "timestamp": "2026-05-10T17:17:49",
   "sections": [
     {
       "name": ".text",

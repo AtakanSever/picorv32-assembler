@@ -1,5 +1,5 @@
 # PicoRV32 Linker Map
-# Generated: 2026-05-09T16:39:10
+# Generated: 2026-05-09T17:03:44
 
 ## Memory Regions
   mem      0x00000000 .. 0x00001fff  (8192 bytes, rwx)

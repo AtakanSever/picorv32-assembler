@@ -1,0 +1,40 @@
+{
+  "magic": "PICORV32-OBJ",
+  "version": 1,
+  "filename": "uart_echo.s",
+  "timestamp": "2026-06-06T05:18:42",
+  "sections": [
+    {
+      "name": ".text",
+      "addr": 0,
+      "size": 68,
+      "data": "37210000130101ff3704001013044400b7040010938404013709001013094901b7090010938909000325090013751500e30c05fe03a504002320a40023a0a9006ff09ffe",
+      "align": 4,
+      "flags": [
+        "EXEC",
+        "ALLOC"
+      ]
+    }
+  ],
+  "symbols": [
+    {
+      "name": "_start",
+      "section": ".text",
+      "value": 0,
+      "size": 0,
+      "binding": "GLOBAL",
+      "type": "NOTYPE",
+      "line": 6
+    },
+    {
+      "name": "wait_byte",
+      "section": ".text",
+      "value": 40,
+      "size": 0,
+      "binding": "LOCAL",
+      "type": "NOTYPE",
+      "line": 12
+    }
+  ],
+  "relocations": []
+}
